@@ -4,8 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { library } from "@fortawesome/fontawesome-svg-core"
 
+import image from "../../image/thanks01.png"
+
 import Confetti from "react-confetti"
-import Crypto from "../../components/Crypto/Crypto"
 import Sponsors from "../../components/Sponsor/Sponsor"
 import "./Thanks.css"
 
@@ -81,7 +82,7 @@ class Thanks extends React.Component {
           </Typography>
           <Typography>{this.state.config.caption}</Typography>
           <div style={{ margin: "15px 0" }}>
-            <b>Want to support my work?</b>
+            <h1>Terimakasih Telah Membayar Zakat</h1>
             <ButtonGroup
               orientation={"vertical"}
               fullWidth
@@ -89,8 +90,8 @@ class Thanks extends React.Component {
             >
               {this.state.buttons}
             </ButtonGroup>
-            <Crypto data={this.state.config.crypto} />
           </div>
+          <img className={"thanks01"} src={image} alt="" />
           <Grid container>
             {this.state.config.sponsors ? (
               <Sponsors

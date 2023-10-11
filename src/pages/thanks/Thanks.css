@@ -15,6 +15,11 @@ a {
   width: 500px;
 }
 
+.thanks01 {
+  height: 250px;
+  width: 250px;
+}
+
 .centered-wrapper {
   display: flex;
   flex-direction: column;
