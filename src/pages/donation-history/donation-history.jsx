@@ -34,7 +34,7 @@ function DonationHistoryPage() {
 
   return (
     <div className="donation-history-container">
-      <h2 className="donation-history-title">Donation History</h2>
+      <h2 className="donation-history-title">Jenis Zakat</h2>
       <Link to="/donate">
         {donationData.length > 0 ? (
           <div className="donation-history-list">
